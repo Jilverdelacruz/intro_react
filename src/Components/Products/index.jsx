@@ -16,7 +16,6 @@ const Products = ({product, listProducts, car, setCar})=>{
             ? <button onClick={()=>selection(product.id)}>Comprar</button>
             :<button onClick={()=>deleteProduct(product.id)}>Eliminar</button>
             }
-            
         </>
     )
 }
