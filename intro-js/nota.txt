@@ -1,1 +1,21 @@
 Conceptos JS
+Objeto Literal
+let articulos={
+    nombre:'sandía',
+    precio:5,
+    cantidad:2
+}
+
+Objeto Constructor
+function Articulos(nombre, precio, cantidad){ // POR ESTÁNDAR EL NOMBRE DEL OBJETO ES CON MAYÚSCULA
+    this.nombre=nombre
+    this.precio=precio
+    this.cantidad=cantidad
+}
+const articuloHombre= new Articulos('camisa', 5, 3)
+
+//Prototypes
+Articulos.prototype.mostrarArticulos= function(){// en este caso Articulos es un método y le indico que se haga una función para ese objeto
+    return `El producto demandado es ${this.nombre} y la cantidad es de ${this.cantidad}` 
+}
+//Destructuring
