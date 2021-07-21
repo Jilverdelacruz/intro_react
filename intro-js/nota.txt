@@ -15,7 +15,20 @@ function Articulos(nombre, precio, cantidad){ // POR ESTÁNDAR EL NOMBRE DEL OBJ
 const articuloHombre= new Articulos('camisa', 5, 3)
 
 //Prototypes
-Articulos.prototype.mostrarArticulos= function(){// en este caso Articulos es un método y le indico que se haga una función para ese objeto
+Articulos.prototype.mostrarArticulos= function(){// en este caso Artículo es una función solo para este tipo de objeto
     return `El producto demandado es ${this.nombre} y la cantidad es de ${this.cantidad}` 
 }
 //Destructuring
+const {nombre, precio, cantidad} = articulos
+//Object Literal Enhacement
+ const articulo ={precio2, nombre2, cantidad2} // agrega valores a un objeto
+
+//PROMESAS
+Cuando se realiza un llamado asíncrono (que se ejecuta sin seguir un órden como el setTimeout) y por ejemplo se hace un llamado  a una API, si todo sale bien, hace algo si algo falló que te arroje el error.
+const aplicarDescuuento = new Promise((resolve, reject)=>{}
+aplicarDescuuento.then(resol=>{ // .then hace referencia a la espera ya que primero tiene que ejecutarse lo que estádentro de la promesa
+    console.log(resol)
+    console.log('la prueba ha finazalido')
+}).catch(error =>{
+    console.log(error) // por ejemplo si cambiar la variable descuento te mandará el error
+})
